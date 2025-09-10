@@ -3,17 +3,14 @@ name: First Work Flows
 on:   
     push:
       branches:
-         -main
+         - main
                  
 
-    pull_request:
-
-
 jobs:
-   example-job:
-       runs-on: ubuntu-latest
+  example-job:
+     runs-on: ubuntu-latest
 
-       steps:
-         -name: "Welcome message"
-            run: echo "First git workflow action" 
+     steps:
+      - name: "Welcome message"
+        run: echo "First git workflow action" 
          
